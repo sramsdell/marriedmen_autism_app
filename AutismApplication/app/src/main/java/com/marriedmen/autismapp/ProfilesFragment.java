@@ -32,12 +32,13 @@ public class ProfilesFragment extends ListFragment
 
         int layout = Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB ?
                 android.R.layout.simple_list_item_activated_1 : android.R.layout.simple_list_item_1;
-        
+
         // get database to make list
         //DBHelper db = new DBHelper(getActivity());
         //SQLiteDatabase db = this.getReadableDatabase();
 
         DBHelper db = new DBHelper(getActivity());
+        //String[] test = db.getProfiles();
         // test array
         String[] test = new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
         setListAdapter(new ArrayAdapter<>(getActivity(), layout, test));
