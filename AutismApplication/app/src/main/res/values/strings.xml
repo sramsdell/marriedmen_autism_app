@@ -4,10 +4,6 @@
     <string name="header_general">General Settings</string>
 
 
-
-
-
-
     <string name="pref_title_switch_button">Enable some stuff here</string>
     <string name="pref_description_switch_button">This is what the button does,
         if you turn it on it does this, else it does that
@@ -26,12 +22,6 @@
     </string-array>
 
 
-
-
-
-
-
-
     <!-- Example settings for Notifications -->
     <string name="header_notifications">Alarm Notification Settings</string>
 
@@ -41,8 +31,6 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
-
-
 
 
     <!-- example settings for Graphing Data -->
@@ -61,7 +49,7 @@
         <item>180</item>
         <item>360</item>
     </string-array>
-
+    <string name="title_activity_debug">DebugActivity</string>
 
 
     <!-- need to implement these
@@ -70,9 +58,6 @@
     <string name ="line">Line</string>
 
      -->
-
-
-
 
 
 </resources>

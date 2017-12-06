@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/preferenceScreen">
 
     <SwitchPreference
+        android:id="@+id/switchPreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:defaultValue="true"
         android:key="example_switch"
         android:summary="@string/pref_description_switch_button"
-        android:title="@string/pref_title_switch_button" />
+        android:title="@string/pref_title_switch_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
          dismiss it. -->
     <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
     <ListPreference
+        android:id="@+id/listPreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:defaultValue="-1"
         android:entries="@array/pref_example_list_titles"
         android:entryValues="@array/pref_example_list_values"
         android:key="example_list"
         android:negativeButtonText="@null"
         android:positiveButtonText="@null"
-        android:title="List" />
+        android:title="List"
+        app:layout_constraintStart_toStartOf="@+id/switchPreference"
+        app:layout_constraintTop_toTopOf="@+id/switchPreference" />
 
-</PreferenceScreen>
+</android.support.constraint.ConstraintLayout>
