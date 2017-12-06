@@ -16,6 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".Activity2" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".TimerActivity" />
@@ -23,6 +24,12 @@
             android:name=".DebugActivity"
             android:label="@string/title_activity_debug"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+=======
+        <activity android:name=".Activity2"></activity>
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".TimerActivity"></activity>
+        <activity android:name=".GraphView"></activity>
+>>>>>>> 608753fa6e97a89b57fa9cbe8f57e3074be307d6
     </application>
 
 </manifest>

@@ -87,6 +87,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 + KEY_BEHV_COUNTER + " TEXT, "
                 + DATABASE_TABLE + "("+ KEY_PROFILE_ID+"))";
 
+
         //this is block only for debugging should be deleted later
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_TABLE);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_TABLE_BEHV);

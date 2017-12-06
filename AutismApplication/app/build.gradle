@@ -20,12 +20,17 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
     implementation 'com.android.support:design:25.4.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
+=======
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+>>>>>>> 608753fa6e97a89b57fa9cbe8f57e3074be307d6
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
     testCompile 'junit:junit:4.12'
 }

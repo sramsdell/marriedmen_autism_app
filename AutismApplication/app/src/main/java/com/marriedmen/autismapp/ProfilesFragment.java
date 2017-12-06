@@ -42,14 +42,26 @@ public class ProfilesFragment extends ListFragment
 
         DBHelper db = new DBHelper(getActivity());
 
+
         //String[] test = db.getProfiles();
 
-        String[] profiles = db.getProfiles();
+        //String[] profiles = db.getProfiles();
         //Log.d(TAG, "onCreate: " + profiles);
 
         // test array
         //String[] test = new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
         setListAdapter(new ArrayAdapter<>(getActivity(), layout, profiles));
+
+
+        try
+        {
+            String[] profiles = db.getProfiles();
+            setListAdapter(new ArrayAdapter<>(getActivity(), layout, profiles));
+        }
+        catch (Exception e)
+        {
+            Log.d("test", "no profiles");
+        }
 
 
     }
